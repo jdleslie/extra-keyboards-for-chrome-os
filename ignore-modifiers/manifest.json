@@ -1,0 +1,38 @@
+/*
+Copyright 2014 Google Inc. All rights reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/
+{
+  "name": "Mute Modifiers in Citrix",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Selectively ignore modifiers in specific windows",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "input",
+    "tabs"
+  ],
+  "input_components": [
+    {
+      "name": "Mute Modifiers in Citrix",
+      "type": "ime",
+      "id": "mute_modifiers",
+      "description": "Allows you to remap CapsLock",  /* Visible to user */
+      "language": "en-US",  /* Primary language for this extension */
+      "layouts": ["us"]  /* Supported keyboard layout */
+    }
+  ]
+}
