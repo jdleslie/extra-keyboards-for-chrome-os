@@ -14,10 +14,10 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 {
-  "name": "Mute Modifiers in Citrix",
+  "name": "Mute Modifiers",
   "version": "1.0",
   "manifest_version": 2,
-  "description": "Selectively ignore modifiers in specific windows",
+  "description": "Suppress ChromeOS handling of modifier keys",
   "background": {
     "scripts": ["background.js"]
   },
@@ -27,12 +27,12 @@ limitations under the License.
   ],
   "input_components": [
     {
-      "name": "Mute Modifiers in Citrix",
+      "name": "Mute Modifiers (US)",
       "type": "ime",
-      "id": "mute_modifiers",
-      "description": "Allows you to remap CapsLock",  /* Visible to user */
-      "language": "en-US",  /* Primary language for this extension */
-      "layouts": ["us"]  /* Supported keyboard layout */
+      "id": "mute_modifiers_xkb",
+      "description": "Ignores modifier keys for the US keyboard.",  // Visible to user
+      "language": "en-US",  // Primary language for this extension
+      "layouts": ["us"]  // Supported keyboard layout
     }
   ]
 }
