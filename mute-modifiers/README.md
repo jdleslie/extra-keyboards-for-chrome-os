@@ -1,5 +1,7 @@
 # Ignore Modifiers
 
+_This is a non-working WIP_
+
 Selectively suppresses handling of modifiers when specific windows are active. Windows are identified by URL. This allows modifiers like <kbd>Search</kbd> and <kbd>Assistant</kbd> to pass through as normal keyboard events to the active application, which is useful for remote control applications (e.g. Citrix Receiver & Workspace).
 
 Non-keyboard events (e.g. touchpad gestures, mouse, etc.) are unaffected.
